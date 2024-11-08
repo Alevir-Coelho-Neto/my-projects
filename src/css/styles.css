@@ -117,6 +117,14 @@ header nav .logo-nav:hover img {
   animation-delay: 0.1s;
 }
 
+/* ScrollReveal*/
+
+.card,
+.title-text-sticky,
+.paragraph-text-sticky{
+  visibility: hidden;
+}
+
 /* Projects */
 
 .projects .flex {
