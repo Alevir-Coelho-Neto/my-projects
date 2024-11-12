@@ -67,7 +67,6 @@ header nav .logo-nav:hover img {
   transition: 0.3s;
 }
 
-
 /* Pre-loader */
 
 #preloader {
@@ -82,38 +81,42 @@ header nav .logo-nav:hover img {
 }
 
 @keyframes fall {
-  0% {height: 0;}
-  100% {height: 100%;}
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 100%;
+  }
 }
 
 .falling-rect {
   width: 100%;
   height: 0;
-  animation: fall .5s ease-in-out forwards;
+  animation: fall 0.4s ease-in-out forwards;
   background: black;
 }
 
-.falling-rect:nth-child(1){
+.falling-rect:nth-child(1) {
   animation-delay: 0.6s;
 }
 
-.falling-rect:nth-child(2){
+.falling-rect:nth-child(2) {
   animation-delay: 0.5s;
 }
 
-.falling-rect:nth-child(3){
+.falling-rect:nth-child(3) {
   animation-delay: 0.4s;
 }
 
-.falling-rect:nth-child(4){
+.falling-rect:nth-child(4) {
   animation-delay: 0.3s;
 }
 
-.falling-rect:nth-child(5){
+.falling-rect:nth-child(5) {
   animation-delay: 0.2s;
 }
 
-.falling-rect:nth-child(6){
+.falling-rect:nth-child(6) {
   animation-delay: 0.1s;
 }
 
@@ -121,7 +124,7 @@ header nav .logo-nav:hover img {
 
 .card,
 .title-text-sticky,
-.paragraph-text-sticky{
+.paragraph-text-sticky {
   visibility: hidden;
 }
 
@@ -173,7 +176,7 @@ header nav .logo-nav:hover img {
   margin-top: 3px;
   transform: rotate(45deg);
   font-size: 2rem;
-  transition: var(--transition-duration);
+  transition: transform .4s ease;
 }
 
 .btn.btn-text-sticky button:hover i {
@@ -226,32 +229,35 @@ header nav .logo-nav:hover img {
 }
 
 .card1 {
-  background-image: url(../img/build-next.png);
+  background-image: url(../img/build-next.webp);
 }
 
 .card2 {
-  background-image: url(../img/luxe-wave.png);
+  background-image: url(../img/luxe-wave.webp);
 }
 
 .card3 {
-  background-image: url(../img/primefit-academy.png);
+  background-image: url(../img/primefit-academy.webp);
 }
 
 .card4 {
-  background-image: url(../img/clonenetflix.png);
+  background-image: url(../img/clonenetflix.webp);
 }
 
 .card5 {
-  background-image: url(../img/coming-soon.png);
+  background-image: url(../img/coming-soon.webp);
 }
+
 .card6 {
-  background-image: url(../img/coming-soon.png);
+  background-image: url(../img/coming-soon.webp);
 }
+
 .card7 {
-  background-image: url(../img/coming-soon.png);
+  background-image: url(../img/coming-soon.webp);
 }
+
 .card8 {
-  background-image: url(../img/coming-soon.png);
+  background-image: url(../img/coming-soon.webp);
 }
 
 /* Responsividade */
@@ -429,7 +435,6 @@ header nav .logo-nav:hover img {
 /* Celulares */
 
 @media (min-width: 320px) and (max-width: 600px) {
- 
   .text-sticky h2 {
     font-size: clamp(38px, 4vw, 70px);
   }
@@ -466,7 +471,6 @@ header nav .logo-nav:hover img {
 /* Celulares pequenos */
 
 @media (max-width: 320px) {
-
   .text-sticky h2 {
     font-size: clamp(33px, 4vw, 70px);
   }
@@ -489,8 +493,6 @@ header nav .logo-nav:hover img {
   .btn-social-media-text-sticky {
     width: 100%;
   }
-
-
 
   .card {
     border: 2px solid white;
